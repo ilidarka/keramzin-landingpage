@@ -24,25 +24,42 @@ html, body {
     border-radius: 6px;
     color: #fff;
 }
-.headerContainer {
-    width: 100%;
+header {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+.headerTop, .headerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headerBottom {
+    background-color: var(--main-red);
+    height: 80px;
+}
+.headerBottom .mainWrapper {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainWrapper {
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
 }
 .topHeader {
-    height: 50.6px;
-    margin-top: 31.23px;
-    max-width: 1170px;
+    height: 114px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 7px
 }
 .logo h1 {
     font-family: 'Montserrat', sans-serif;
@@ -62,7 +79,6 @@ html, body {
     line-height: 17px;
 }
 .adress-workingHours {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -118,12 +134,21 @@ html, body {
     line-height: 22px;
     gap: 10px;
 }
-.requestCallButton {
-
+nav {
+    display: flex;
 }
-.nav-bar {
-
+nav li {
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
-.header-bottom {
-
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav li a:active {
+    color: #fff;
 }
