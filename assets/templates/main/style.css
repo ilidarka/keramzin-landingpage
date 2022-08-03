@@ -11,7 +11,18 @@ html, body {
     width: 100%;
 }
 .button {
-
+    border: none;
+    height: 46px;
+    width: 170px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: var(--main-red);
+    box-shadow: 0px 2px 0px #A32929;
+    border-radius: 6px;
+    color: #fff;
 }
 .headerContainer {
     width: 100%;
@@ -19,7 +30,7 @@ html, body {
     justify-content: center;
 }
 .topHeader {
-    margin-top: 31px;
+    margin-top: 31.23px;
     max-width: 1170px;
     width: 100%;
     display: flex;
@@ -40,10 +51,11 @@ html, body {
     color: var(--main-red);
 }
 .logo h2 {
-    font-family: 'Montserrat';
+    margin-top: 5.61px;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13.8px;
     line-height: 17px;
 }
 .adress-workingHours {
@@ -51,10 +63,18 @@ html, body {
     flex-direction: column;
 }
 .adress {
-
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
 }
 .workingHours {
-
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
 }
 .headerContacts {
     display: flex;
@@ -62,6 +82,7 @@ html, body {
 .contacts {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .mail {
 
