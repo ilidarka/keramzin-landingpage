@@ -30,6 +30,7 @@ html, body {
     justify-content: center;
 }
 .topHeader {
+    height: 50.6px;
     margin-top: 31.23px;
     max-width: 1170px;
     width: 100%;
@@ -38,7 +39,10 @@ html, body {
     align-items: center;
 }
 .logo {
-
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .logo h1 {
     font-family: 'Montserrat', sans-serif;
@@ -51,7 +55,6 @@ html, body {
     color: var(--main-red);
 }
 .logo h2 {
-    margin-top: 5.61px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -59,36 +62,61 @@ html, body {
     line-height: 17px;
 }
 .adress-workingHours {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .adress {
+    display: flex;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    gap: 10px;
 }
 .workingHours {
+    display: flex;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    gap: 10px;
 }
 .headerContacts {
     display: flex;
 }
 .contacts {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin-right: 40px;
 }
 .mail {
-
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    gap: 10px;
 }
 .phone {
-
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    gap: 10px;
 }
 .requestCallButton {
 
