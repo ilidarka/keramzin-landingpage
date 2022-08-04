@@ -158,7 +158,7 @@ main {
     min-height: 487px;
     height: 100%;
     width: 100%;
-    background-image: url("/assets/templates/main/img/backgroundImage.png");
+    background-image: url("./img/backgroundImage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
