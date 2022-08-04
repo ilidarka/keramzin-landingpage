@@ -1,9 +1,12 @@
+@import url("./checkBoxStyle.css");
 :root {
  --main-red: #DD2B2B;
 }
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
 }
 html, body {
     margin: 0;
@@ -14,8 +17,6 @@ html, body {
     border: none;
     height: 46px;
     width: 170px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -62,8 +63,6 @@ header {
     gap: 7px
 }
 .logo h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 23.3489px;
     line-height: 28px;
@@ -72,8 +71,6 @@ header {
     color: var(--main-red);
 }
 .logo h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 13.8px;
     line-height: 17px;
@@ -87,8 +84,6 @@ header {
 .adress {
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -97,8 +92,6 @@ header {
 .workingHours {
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -117,8 +110,6 @@ header {
 .mail {
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -127,8 +118,6 @@ header {
 .phone {
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
@@ -142,8 +131,6 @@ nav {
 }
 nav li {
     list-style-type: none;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -158,4 +145,96 @@ nav li a:active {
 .headerBottom button {
     background-color: #fff;
     color: #000;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.quality-calculate {
+    display: flex;
+    justify-content: center;
+    min-height: 487px;
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/templates/main/img/backgroundImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.quality-calculate .mainWrapper{
+    justify-content: space-between;
+}
+.quality {
+    margin-top: 91px;
+    background-color: rgba(255, 255, 255, 0.85);
+    max-height: 254px;
+    max-width: 596px;
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+.quality h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.quality h2 span {
+    color: var(--main-red);
+}
+.quality h3 {
+    margin-top: 21.56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+.calculate {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.85);
+    max-height: 379px;
+    max-width: 392px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.calculateWrapper {
+    max-width: 302px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculate h2 {
+    margin-top: 42px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.calculate .inputBar {
+    margin-top: 20px;
+    width: calc(100% - 44px);
+    height: 63px;
+    padding: 0 22px;
+    border: 1px solid #DEDEDE;
+    background: transparent;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+.calculate button {
+    width: 100%;
+    height: 63px;
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
 }
