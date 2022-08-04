@@ -10,7 +10,7 @@ html, body {
     padding: 0;
     width: 100%;
 }
-.button {
+.buttons {
     border: none;
     height: 46px;
     width: 170px;
@@ -36,7 +36,7 @@ header {
 }
 .headerBottom {
     background-color: var(--main-red);
-    height: 80px;
+    height: 81px;
 }
 .headerBottom .mainWrapper {
     height: 100%;
@@ -135,7 +135,10 @@ header {
     gap: 10px;
 }
 nav {
+    max-width: 675px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 nav li {
     list-style-type: none;
@@ -151,4 +154,8 @@ nav li a {
 }
 nav li a:active {
     color: #fff;
+}
+.headerBottom button {
+    background-color: #fff;
+    color: #000;
 }
