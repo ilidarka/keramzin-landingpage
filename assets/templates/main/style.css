@@ -372,3 +372,76 @@ main {
     display: flex;
     justify-content: space-between;
 }
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 82px;
+}
+.about h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about p {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+.about .advantages-items {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.usage {
+    background-image: linear-gradient(rgba(221, 43, 43, 0.9), rgba(221, 43, 43, 0.9)), url("./img/usageBackground.png");
+    background-position: top;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    margin-top: 100px;
+    min-height: 375px;
+    display: flex;
+    justify-content: center;
+}
+.usage h3 {
+    margin-top: 58px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+.usage .usage-items {
+    margin-top: 29px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.usage .usage-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.usage .usage-item span {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+}
+.usage .usage-item p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
