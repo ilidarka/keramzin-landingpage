@@ -484,12 +484,12 @@ main {
     text-transform: uppercase;
 }
 .popularGoods-items {
-    width: 100%;
-    margin-top: 23px;
+    width: 72%;
+    margin-top: 18px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-between;
+    align-items: baseline;
 }
 .popularGoods-item {
     display: flex;
@@ -497,9 +497,64 @@ main {
     align-items: center;    
 }
 .popularGoods-item span {
-    margin-top: 20px;
+    margin-top: 29px;
     font-weight: 600;
     font-size: 17px;
     line-height: 27px;
     text-align: center;
+}
+.howDoWeWork {
+    margin-top: 92px;
+    background-color: var(--main-red);
+    min-height: 461px;
+    display: flex;
+    justify-content: center;
+}
+.howDoWeWork h3 {
+    margin-top: 55px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.howDoWeWork .howDoWeWork-items {
+    background: url("./img/backgroundLine.png") no-repeat;
+    background-size: 80% 1px;
+    background-position-x: 50%;
+    background-position-y: 20.5%;
+    margin-top: 23px;
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+}
+.howDoWeWork .howDoWeWork-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.howDoWeWork .howDoWeWork-item img {
+    background-color: var(--main-red);
+}
+.howDoWeWork .howDoWeWork-item span {
+    margin-top: 19px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+}
+.howDoWeWork .howDoWeWork-item p {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+.howDoWeWork button {
+    margin-top: 35px;
+    background-color: #fff;
+    color: #000;
 }
