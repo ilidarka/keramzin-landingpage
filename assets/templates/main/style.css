@@ -636,3 +636,47 @@ main {
 .ourContacts .contacts-info ul li .phoneSpan {
     font-weight: 700;
 }
+.questions {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+.questions h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.questions .askQuestion {
+    margin-top: 120px;
+    width: 71.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.questions .askQuestion .questionsInput {
+    display: flex;
+    width: 61%;
+}
+.questions .askQuestion .questionsInput input {
+    padding-left: 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #606060;
+    background: #DBDBDB;
+    border: none;
+    width: 100%;
+}
+.questions .askQuestion .questionsInput input:last-child {
+    margin-left: 8px;
+}
+.questions .askQuestion button {
+    width: 302px;
+    height: 63px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
