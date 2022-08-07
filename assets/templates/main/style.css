@@ -682,3 +682,36 @@ main {
     line-height: 18px;
     text-align: center;
 }
+footer {
+    min-height: 332px;
+    background-color: #4F4F4F;
+    margin-top: 96px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer .footerInfo {
+    width: 100%;
+    margin-top: 49px;
+    display: flex;
+    justify-content: center;
+}
+footer .footerInfo .mainWrapper {
+    flex-direction: row;
+}
+.footerInfo .logo h1, .footerInfo .logo h2 {
+    color: #fff;
+} 
+.footerInfo .links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footerInfo .links ul li a { 
+    text-decoration: none;
+    color: #fff;
+}
+.footerInfo .links ul li a:active {
+    color: #fff;
+}
