@@ -142,6 +142,9 @@ header {
         margin-top: 10px;
     }
 }
+
+
+
 nav {
     max-width: 675px;
     width: 100%;
@@ -319,6 +322,12 @@ main {
 .rightBlock button {
     width: 142px;
     margin-top: 33px;
+}
+@media (max-width: 560px) {
+    .catalog .blocks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .popular {
     margin-top: 91px;
