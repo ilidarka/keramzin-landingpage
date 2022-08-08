@@ -129,6 +129,19 @@ header {
     display: flex;
     flex-direction: row;
 }
+@media (max-width: 900px) {
+    .topHeader {
+        flex-direction: column;
+        height: 220px;
+    }
+    .topHeader .headerContacts {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .topHeader .headerContacts button {
+        margin-top: 10px;
+    }
+}
 nav {
     max-width: 675px;
     width: 100%;
@@ -354,6 +367,22 @@ main {
     margin-top: 5px;
     width: 142px;
 }
+@media (max-width: 1100px) {
+    .popular .popular-items {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .popular .popular-item {
+        width: 50%;
+        margin: 20px 0;
+    }
+}
+@media (max-width: 650px) {
+    .popular .popular-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
 .production {
     margin-top: 87px;
     display: flex;
@@ -371,6 +400,23 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.production-item {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1100px) {
+    .production .production-items {
+        flex-wrap: wrap;
+    }
+    .production .production-item {
+        width: 50%;
+    }
+}
+@media (max-width: 550px) {
+    .production .production-item {
+        width: 100%;
+    }
 }
 .about {
     display: flex;
@@ -396,6 +442,19 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.about .advantages-item {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1100px) {
+    .about .advantages-items {
+        flex-wrap: wrap;
+    }
+    .about .advantages-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 .usage {
     background-image: linear-gradient(rgba(221, 43, 43, 0.9), rgba(221, 43, 43, 0.9)), url("./img/usageBackground.png");
@@ -445,6 +504,15 @@ main {
     text-align: center;
     color: #fff;
 }
+@media (max-width: 1050px) {
+    .usage .usage-items {
+        flex-wrap: wrap;
+    }
+    .usage .usage-item {
+        width: 50%;
+        margin-bottom: 20px
+    }
+}
 .licenses {
     display: flex;
     flex-direction: column;
@@ -463,6 +531,11 @@ main {
     margin-top: 23px;
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 1050px) {
+    .licenses .licenses-items {
+        flex-wrap: wrap;
+    }
 }
 .popularGoods {
     min-height: 311px;
@@ -502,6 +575,21 @@ main {
     font-size: 17px;
     line-height: 27px;
     text-align: center;
+}
+@media (max-width: 950px) {
+    .popularGoods .popularGoods-items {
+        flex-wrap: wrap;
+    }
+    .popularGoods .popularGoods-item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .popularGoods .popularGoods-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 .howDoWeWork {
     margin-top: 92px;
@@ -558,6 +646,19 @@ main {
     background-color: #fff;
     color: #000;
 }
+@media (max-width: 650px) {
+    .howDoWeWork .howDoWeWork-items {
+        flex-wrap: wrap;
+        background-image: none;
+    }
+    .howDoWeWork .howDoWeWork-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .howDoWeWork button {
+        margin-bottom: 20px;
+    }
+}
 .delivery {
     margin-top: 90px;
     display: flex;
@@ -599,6 +700,16 @@ main {
     line-height: 24px;
     text-align: center;
 }
+@media (max-width: 910px) {
+    .delivery .delivery-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .delivery .delivery-item {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+}
 .ourContacts {
     display: flex;
     justify-content: center;
@@ -635,6 +746,15 @@ main {
 }
 .ourContacts .contacts-info ul li .phoneSpan {
     font-weight: 700;
+}
+@media (max-width: 1200px) {
+    .ourContacts .contactsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourContacts li {
+        margin-bottom: 15px;
+    }
 }
 .questions {
     margin-top: 85px;
@@ -681,6 +801,24 @@ main {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
+}
+@media (max-width: 1100px) {
+    .questions .askQuestion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .questions .questionsInput {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .questions .questionsInput input {
+        height: 50px;
+    }
+    .questions .questionsInput input:last-child {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
 }
 footer {
     min-height: 332px;
