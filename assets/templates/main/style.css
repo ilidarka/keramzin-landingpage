@@ -654,7 +654,7 @@ main {
     justify-content: space-between;
     width: 71.5%;
     border: 8px solid #F6F6F6;
-    padding: 80px 65px;
+    padding: 81px 65px;
 }
 .questions .askQuestion .questionsInput {
     display: flex;
@@ -684,7 +684,7 @@ main {
 }
 footer {
     min-height: 332px;
-    background-color: #4F4F4F;
+    background-color: #393939;
     margin-top: 96px;
     width: 100%;
     display: flex;
@@ -692,26 +692,102 @@ footer {
 }
 footer .footerInfo {
     width: 100%;
-    margin-top: 49px;
+    margin-top: 47px;
     display: flex;
     justify-content: center;
 }
-footer .footerInfo .mainWrapper {
-    flex-direction: row;
+.infoContainer {
+    min-height: 193px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #4E4E4E;
 }
-.footerInfo .logo h1, .footerInfo .logo h2 {
+.footerLogo h1, .footerLogo h2 {
     color: #fff;
 } 
-.footerInfo .links ul {
+.footerLogo h1 {
+    font-weight: 500;
+    font-size: 23.3489px;
+    line-height: 28px;
+}
+.footerLogo h2 {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.1px;
+}
+.footerLogo span {
+    color : var(--main-red);
+}
+.infoContainer .links ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.footerInfo .links ul li a { 
+.infoContainer .links ul li {
+    margin-bottom: 19px;
+}
+.infoContainer .links ul li a { 
     text-decoration: none;
     color: #fff;
+    font-weight: 400;
+    font-size: 14px;
 }
-.footerInfo .links ul li a:active {
+.footerInfo .infoContainer .links ul li a:active {
     color: #fff;
+}
+.infoContainer .socials {
+    display: flex;
+    align-items: center;
+}
+.infoContainer .socials img {
+    margin-right: 10px;
+}
+.footerContacts-button {
+    display: flex;
+    justify-content: center;
+}
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    margin-top: 1px;
+}
+.footerMail {
+    display: flex;
+    justify-content: center;
+}
+.footerMail span {
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footerPhone {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerPhone span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.copyrights {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyrights span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: #747474;
 }
