@@ -194,7 +194,7 @@ header {
   
   .nav ul {
     padding: 0 22px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   
   .nav li {
@@ -222,7 +222,7 @@ header {
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 30px 0 20px 20px;
+    margin: 30px 0 20px 40px;
     background: radial-gradient(circle, var(--main-red), var(--main-red));
     border-radius: 50%;
     transition: 0.3s ease;
@@ -256,12 +256,6 @@ header {
     height: 460px;
     transform: translate(-60%,-30%);
   }
-@media (max-width: ) {
-
-}
-
-
-
 
 
 
@@ -392,11 +386,11 @@ main {
         width: 70%;
     }
     .quality-calculate .quality h2 {
-        font-size: 0.6em;
+        font-size: 1em;
         margin-right: 15px;
     }
     .quality-calculate .quality h3 {
-        font-size: 0.6em;
+        font-size: 1em;
     }
     .quality-calculate .calculate {
         margin-top: 20px;
@@ -405,7 +399,7 @@ main {
         width: 70%;
     }
     .quality-calculate .calculate h2 {    
-        font-size: 0.6em;
+        font-size: 1em;
         margin: 10px 10px;
     }    
     .quality-calculate .calculate button {
@@ -482,6 +476,9 @@ main {
     margin-top: 33px;
 }
 @media (max-width: 560px) {
+    .catalog .mainWrapper h3 {
+        font-size: 1.5em;
+    }
     .catalog .blocks {
         flex-wrap: wrap;
         justify-content: center;
@@ -535,6 +532,9 @@ main {
     width: 142px;
 }
 @media (max-width: 1100px) {
+    .popular h3 {
+        font-size: 1.5em;
+    }
     .popular .popular-items {
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -581,6 +581,9 @@ main {
     }
 }
 @media (max-width: 550px) {
+    .production h3 {
+        font-size: 1.5em;
+    }
     .production .production-item {
         width: 100%;
     }
@@ -615,11 +618,15 @@ main {
     justify-content: center;
 }
 @media (max-width: 1100px) {
+    .about h3 {
+        font-size: 1.5em;
+    }
     .about .advantages-items {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .about .advantages-item {
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
     }
 }
@@ -672,6 +679,9 @@ main {
     color: #fff;
 }
 @media (max-width: 1050px) {
+    .usage h3 {
+        font-size: 1.5em;
+    }
     .usage .usage-items {
         flex-wrap: wrap;
     }
@@ -702,6 +712,7 @@ main {
 @media (max-width: 1050px) {
     .licenses .licenses-items {
         flex-wrap: wrap;
+        align-items: center;
     }
 }
 .popularGoods {
@@ -744,6 +755,9 @@ main {
     text-align: center;
 }
 @media (max-width: 950px) {
+    .popularGoods h3 {
+        font-size: 1.5em;
+    }
     .popularGoods .popularGoods-items {
         flex-wrap: wrap;
     }
@@ -868,6 +882,9 @@ main {
     text-align: center;
 }
 @media (max-width: 910px) {
+    .delivery p {
+        font-size: 0.9em;
+    }
     .delivery .delivery-items {
         flex-direction: column;
         align-items: center;
@@ -918,9 +935,15 @@ main {
     width: 100%;
 }
 @media (max-width: 1200px) {
+    .ourContacts h3 {
+        font-size: 1.5em;
+    }
     .ourContacts .contactsContainer {
         flex-direction: column;
         align-items: center;
+    }
+    .ourContacts ul {
+        width: 80%;
     }
     .ourContacts li {
         margin-bottom: 15px;
@@ -973,10 +996,13 @@ main {
     text-align: center;
 }
 @media (max-width: 1100px) {
+    .questions h3 {
+        font-size: 1.5em;
+    }
     .questions .askQuestion {
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 80%;
     }
     .questions .questionsInput {
         flex-direction: column;
@@ -989,6 +1015,9 @@ main {
     .questions .questionsInput input:last-child {
         margin-top: 10px;
         margin-left: 0 !important;
+    }
+    .questions .askQuestion button {
+        width: 67%
     }
 }
 footer {
