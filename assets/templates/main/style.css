@@ -382,8 +382,9 @@ main {
     }
     .quality-calculate .quality {
         margin-top: 20px;
-        padding-bottom: 40px;
+        padding: 40px;
         width: 70%;
+        justify-content: center;
     }
     .quality-calculate .quality h2 {
         font-size: 1em;
@@ -410,6 +411,9 @@ main {
     .quality-calculate .calculate input {
         height: 2em;
         width: 80%
+    }
+    .quality-calculate .calculate {
+        padding: 40px;
     }
 }
 .catalog {
@@ -712,7 +716,7 @@ main {
 @media (max-width: 1050px) {
     .licenses .licenses-items {
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
     }
 }
 .popularGoods {
@@ -1002,7 +1006,7 @@ main {
     .questions .askQuestion {
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 50%;
     }
     .questions .questionsInput {
         flex-direction: column;
