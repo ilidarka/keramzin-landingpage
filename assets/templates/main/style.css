@@ -171,7 +171,7 @@ header {
   #menu-bar {
     width: 45px;
     height: 40px;
-    margin: 30px 0 20px 20px;
+    margin: 30px 0 20px 10px;
     cursor: pointer;
     position: fixed; 
     z-index: 12; 
@@ -399,6 +399,8 @@ main {
     .quality-calculate .quality h2 {
         font-size: 1em;
         margin-right: 15px;
+        text-align: center;
+        line-height: 30px;
     }
     .quality-calculate .quality h3 {
         font-size: 1em;
@@ -496,6 +498,9 @@ main {
     .catalog .blocks {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .catalog .leftBlock {
+        margin-bottom: 30px;
     }
 }
 .popular {
@@ -907,7 +912,7 @@ main {
         align-items: center;
     }
     .delivery .delivery-item {
-        width: 40%;
+        width: 80%;
         margin-bottom: 20px;
     }
 }
@@ -929,6 +934,9 @@ main {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 22px;
+}
+.ourContacts .contacts-info {
+    display: flex;
 }
 .ourContacts .contacts-info ul {
     height: 100%;
@@ -964,6 +972,9 @@ main {
     }
     .ourContacts li {
         margin-bottom: 15px;
+    }
+    .contactsContainer .contacts-info {
+        justify-content: center;
     }
 }
 .questions {
@@ -1019,7 +1030,8 @@ main {
     .questions .askQuestion {
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 80%;
+        padding: 81px 0;
     }
     .questions .questionsInput {
         flex-direction: column;
@@ -1034,7 +1046,8 @@ main {
         margin-left: 0 !important;
     }
     .questions .askQuestion button {
-        width: 67%
+        width: 68%;
+        font-size: 0.8em;
     }
 }
 footer {
@@ -1157,6 +1170,14 @@ footer .footerInfo {
     .infoContainer .footerContacts-button {
         flex-wrap: wrap;
         margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .infoContainer .footerContacts-button button {
+        margin-top: 20px;
+    }
+    .infoContainer .footerContacts-button .footerContacts {
+        margin-right: 0;
+        align-items: center;
     }
     .copyrights {
         flex-wrap: wrap;
