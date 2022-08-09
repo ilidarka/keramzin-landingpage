@@ -129,6 +129,11 @@ header {
     display: flex;
     flex-direction: row;
 }
+@media (max-width: 1200px) {
+    .headerBottom {
+        padding: 0 20px;
+    }
+}
 @media (max-width: 900px) {
     .topHeader {
         flex-direction: column;
@@ -142,6 +147,121 @@ header {
         margin-top: 10px;
     }
 }
+
+
+
+
+
+#menu {
+    z-index: 2;
+    position: fixed;
+    display: none;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    position: fixed; 
+    z-index: 12; 
+}
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--main-red);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    position: fixed;
+
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+    margin-top: 100px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, var(--main-red), var(--main-red));
+    border-radius: 50%;
+    transition: 0.3s ease;
+    position: fixed;
+
+  }
+  
+  .change {
+    display: block;
+    position: fixed;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
+@media (max-width: ) {
+
+}
+
+
+
 
 
 
@@ -197,6 +317,8 @@ main {
     width: 100%;
     padding-left: 40px;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .quality h2 {
     font-weight: 600;
@@ -259,6 +381,42 @@ main {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
+}
+@media (max-width: 1050px) {
+    .quality-calculate .mainWrapper {
+        flex-direction: column;
+    }
+    .quality-calculate .quality {
+        margin-top: 20px;
+        padding-bottom: 40px;
+        width: 70%;
+    }
+    .quality-calculate .quality h2 {
+        font-size: 0.6em;
+        margin-right: 15px;
+    }
+    .quality-calculate .quality h3 {
+        font-size: 0.6em;
+    }
+    .quality-calculate .calculate {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 20em;
+        width: 70%;
+    }
+    .quality-calculate .calculate h2 {    
+        font-size: 0.6em;
+        margin: 10px 10px;
+    }    
+    .quality-calculate .calculate button {
+        width: 80%;
+        height: 3em;
+        font-size: 0.7em;
+    }
+    .quality-calculate .calculate input {
+        height: 2em;
+        width: 80%
+    }
 }
 .catalog {
     margin-top: 87.39px;
@@ -756,6 +914,9 @@ main {
 .ourContacts .contacts-info ul li .phoneSpan {
     font-weight: 700;
 }
+.ourContacts .contacts-map img {
+    width: 100%;
+}
 @media (max-width: 1200px) {
     .ourContacts .contactsContainer {
         flex-direction: column;
@@ -815,6 +976,7 @@ main {
     .questions .askQuestion {
         flex-direction: column;
         align-items: center;
+        width: 50%;
     }
     .questions .questionsInput {
         flex-direction: column;
@@ -937,4 +1099,29 @@ footer .footerInfo {
     font-size: 12px;
     line-height: 160%;
     color: #747474;
+}
+@media (max-width: 950px) {
+    .footerInfo .infoContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerInfo .infoContainer {
+        gap: 20px
+    }
+    .infoContainer .footerContacts-button {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .copyrights {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 700px) {
+    .headerBottom {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
 }
