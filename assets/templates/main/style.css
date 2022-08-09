@@ -146,6 +146,16 @@ header {
     .topHeader .headerContacts button {
         margin-top: 10px;
     }
+    .adress-workingHours {
+        align-items: center;
+    }
+    .headerContacts {
+        align-items: center;
+    }
+    .headerContacts .contacts {
+        margin-right: 0;
+        align-items: center;
+    }
 }
 
 
@@ -632,6 +642,9 @@ main {
     .about .advantages-item {
         width: 90%;
         margin-bottom: 10px;
+    }
+    .about .advantages-item img {
+        width: 100%;
     }
 }
 .usage {
