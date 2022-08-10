@@ -25,6 +25,11 @@ html, body {
     border-radius: 6px;
     color: #fff;
 }
+.buttons:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 header {
     display: flex;
     justify-content: center;
@@ -597,6 +602,7 @@ main {
     }
     .production .production-item {
         width: 50%;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 550px) {
@@ -1182,6 +1188,12 @@ footer .footerInfo {
     .copyrights {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .copyrights span {
+        margin: 20px 0 10px 0;
+    }
+    .copyrights img {
+        margin: 10px 0 20px 0;
     }
 }
 @media (max-width: 700px) {

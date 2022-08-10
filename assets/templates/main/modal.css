@@ -1,0 +1,77 @@
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    border: 1px solid #888;
+    width: 30%; /* Может быть больше или меньше, в зависимости от размера экрана */
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+.modal input {
+    margin-top: 50px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #606060;
+    background: #DBDBDB;
+    border: none;
+    width: 80%;
+    height: 40px;
+    padding-left: 20px;
+}
+.modal button {
+    margin: 35px 0;
+}
+.closeButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+  }
+.closeButton:hover,
+.closeButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+@media (max-width: 700px) {
+    .modal-content {
+        width: 80%;
+    }
+    .modal button {
+        width: 80%;
+    }
+}
