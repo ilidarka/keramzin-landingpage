@@ -162,18 +162,12 @@ header {
         align-items: center;
     }
 }
-
-
-
-
-
 #menu {
     z-index: 2;
     position: fixed;
     display: none;
-  }
-  
-  #menu-bar {
+}
+#menu-bar {
     width: 45px;
     height: 40px;
     margin: 30px 0 20px 10px;
@@ -181,59 +175,47 @@ header {
     position: fixed; 
     z-index: 12; 
 }
-  
-  .bar {
+.bar {
     height: 5px;
     width: 100%;
     background-color: var(--main-red);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
-    
-  }
-  
-  #bar1 {
+}
+#bar1 {
     transform: translateY(-4px);
-  }
-  
-  #bar3 {
+}
+#bar3 {
     transform: translateY(4px);
-  }
-  
-  .nav {
+}
+.nav {
     transition: 0.3s ease;
     display: none;
     position: fixed;
-
-  }
-  
-  .nav ul {
+}
+.nav ul {
     padding: 0 22px;
     margin-top: 70px;
-  }
-  
-  .nav li {
+}
+.nav li {
     list-style: none;
     padding: 12px 0;
-  }
-  
-  .nav li a {
+}
+.nav li a {
     color: white;
     font-size: 20px;
     text-decoration: none;
-  }
-  
-  .nav li a:hover {
+}
+.nav li a:hover {
     font-weight: bold;
-  }
-  
-  .menu-bg, #menu {
+}
+.menu-bg, #menu {
     top: 0;
     left: 0;
     position: absolute;
-  }
-  
-  .menu-bg {
+}
+.menu-bg {
     z-index: 1;
     width: 0;
     height: 0;
@@ -242,38 +224,28 @@ header {
     border-radius: 50%;
     transition: 0.3s ease;
     position: fixed;
-
-  }
-  
-  .change {
+}
+.change {
     display: block;
     position: fixed;
-  }
-  
-  .change .bar {
+}
+.change .bar {
     background-color: white;
-  }
-  
-  .change #bar1 {
+}
+.change #bar1 {
     transform: translateY(4px) rotateZ(-45deg);
-  }
-  
-  .change #bar2 {
+}
+.change #bar2 {
     opacity: 0;
-  }
-  
-  .change #bar3 {
+}
+.change #bar3 {
     transform: translateY(-6px) rotateZ(45deg);
-  }
-  
-  .change-bg {
+}
+.change-bg {
     width: 520px;
     height: 460px;
     transform: translate(-60%,-30%);
-  }
-
-
-
+}
 nav {
     max-width: 675px;
     width: 100%;
@@ -1203,4 +1175,44 @@ footer .footerInfo {
     #menu {
         display: block;
     }
+}
+.breadcrumbSection {
+    display: flex;
+    justify-content: center;
+}
+.breadcrumbSection .mainWrapper {
+    align-items: flex-start;
+}
+/* Стиль списка */
+ul.breadcrumb {
+    margin: 10px 10px;
+    padding: 10px 16px;
+    list-style: none;
+    color: var(--main-red);
+    display: flex;
+}
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+    color: grey;
+    text-decoration: none;
+}
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+    color: var(--main-red);
+    text-decoration: underline;
+}
+.mainContent {
+    display: flex;
+    justify-content: center;
 }
