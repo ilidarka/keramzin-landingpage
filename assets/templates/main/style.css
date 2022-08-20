@@ -143,6 +143,7 @@ header {
     .topHeader {
         flex-direction: column;
         height: 220px;
+        margin-top: 20px;
     }
     .topHeader .headerContacts {
         flex-direction: column;
